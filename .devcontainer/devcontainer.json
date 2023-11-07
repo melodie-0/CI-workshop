@@ -1,0 +1,16 @@
+{
+  "name": "Python CI Testing",
+  "dockerComposeFile": "compose.yaml",
+  "service": "proj",
+  "workspaceFolder": "/workspaces",
+  "features": {
+    "ghcr.io/eitsupi/devcontainer-features/go-task:1": {},
+    "ghcr.io/devcontainers/features/node:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["github.vscode-github-actions"]
+    }
+  },
+  "postCreateCommand": ".devcontainer/startup.sh"
+}

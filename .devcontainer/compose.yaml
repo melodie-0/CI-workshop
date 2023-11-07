@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  proj:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    
+    environment:
+      - DATADOG_API_KEY=${DATADOG_API_KEY}
+
+    volumes:
+      - ..:/workspaces
+
+    command: sleep infinity

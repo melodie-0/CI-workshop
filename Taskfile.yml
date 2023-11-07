@@ -1,0 +1,14 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  com-dev:
+    cmds:
+      - pip-compile --strip-extras requirements_dev.in
+    silent: true
+
+  sync-dev:
+    cmds:
+      - pip-sync requirements_dev.txt
+    silent: true
