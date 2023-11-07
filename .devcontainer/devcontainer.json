@@ -1,0 +1,9 @@
+{
+  "name": "Python CI Testing",
+  "dockerComposeFile": "compose.yaml",
+  "service": "proj",
+  "workspaceFolder": "/workspaces",
+  "features": {
+    "ghcr.io/eitsupi/devcontainer-features/go-task:1": {}
+  }
+}
